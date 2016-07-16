@@ -1,0 +1,45 @@
+<ion-side-menus>
+<ion-side-menu side="left">
+
+	<ion-list type="card">
+		<ion-item ui-sref="tabs.mytab1">tab1</ion-item>
+		<ion-item ui-sref="tabs.mytab2">tab2</ion-item>
+
+		<ion-item ui-sref="tabs.mytab3">tab3</ion-item>
+
+	</ion-list>
+
+</ion-side-menu>
+<ion-side-menu-content drag-content="true">
+	<ion-nav-bar class="bar-positive" >
+		<ion-nav-back-button></ion-nav-back-button>
+	</ion-nav-bar>
+<ion-tabs class='tabs-mycolor'>
+	<!-- ion-tabs声明条带风格： -->
+		<ion-tab title="tab1" ui-sref="tabs.mytab1" class="positive">
+			<ion-nav-view name="kerwinTab1"></ion-nav-view>
+		</ion-tab>
+		<ion-tab title="tab2" ui-sref="tabs.mytab2">
+			<ion-nav-view name="kerwinTab2"></ion-nav-view>
+		</ion-tab>
+		<!-- ui-sref 的值 是一个状态 不是路径 -->
+		<ion-tab title="tab3" ui-sref="tabs.mytab3">
+			<ion-nav-view  name="kerwinTab3"></ion-nav-view>
+		</ion-tab>
+	</ion-tabs>
+
+</ion-side-menu-content>
+
+
+	<style>
+
+		.tabs{
+			background:red;
+		}
+
+		.tab-item.activated, .tab-item.active, .tab-item.tab-item-active{
+			color:yellow;
+		}
+	</style>
+
+</ion-side-menus>

@@ -1,0 +1,56 @@
+.ion_alphabet_list .alphabet_item_divider {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #EAEAEA;
+    color: gray;
+    height: 25px;
+    font-weight: 500;
+}
+
+.ion_alphabet_list .alphabet_item {
+    /*padding: 11px;*/
+    border-left: none;
+    border-right: none;
+}
+
+.alphabet_item_box {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.ion_alphabet_sidebar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    line-height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 10000;
+}
+
+.ion_alphabet_sidebar li {
+    height: 3.5%;
+    padding: 0;
+    width: 16px;
+    line-height: 100%;
+    display: block;
+    font-size: 100%;
+}
+
+.ion_alphabet_tip {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -30px;
+    margin-top: -40px;
+    color: white;
+    width: 60px;
+    height: 80px;
+    font-size: 20px;
+    z-index: 10000;
+    border-radius: 10px;
+    vertical-align: middle;
+    line-height: 75px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
